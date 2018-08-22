@@ -1,0 +1,168 @@
+/**
+ * File:    viff.cga
+ * Created: 7 Nov 2017 20:05:46 GMT
+ * Author:  Jiawei Huang
+ */
+
+version "2017.0"
+
+//_getMix="Balsam_Fir;113;8.5344;3.048;0.003;1;Balsam_Fir;113;8.5344;3.048;0.003;1;Balsam_Fir;113;8.5344;3.048;0.003;1;Balsam_Fir;115;9.144;3.048;0.033;1;Balsam_Fir;115;9.144;3.048;0.033;1;Balsam_Fir;117;10.668;3.048;0.093;1;Balsam_Fir;126;13.716;3.3528;0.123;2;Balsam_Fir;209;40.8432;4.2672;0.3;3;Balsam_Fir;211;41.4528;4.2672;0.3;3;Balsam_Fir;214;42.672;4.2672;0.33;3;Balsam_Fir;216;43.2816;4.2672;0.33;3;Balsam_Fir;217;43.8912;4.2672;0.36;3;Balsam_Fir;219;44.5008;4.2672;0.36;3;Balsam_Fir;220;45.1104;4.2672;0.39;3;Balsam_Fir;223;46.0248;4.2672;0.39;3;Balsam_Fir;247;53.6448;4.572;0.42;3;Balsam_Fir;244;52.7304;4.572;0.42;3;Black_Ash;227;30.7848;4.8768;0.027;3;Black_Ash;231;32.004;4.8768;0.027;3;Black_Ash;244;33.8328;5.1816;0.03;3;Black_Ash;240;32.3088;5.1816;0.03;3;Black_Cherry;65;9.144;4.2672;0.0033;1;Black_Cherry;76;17.6784;5.1816;0.0123;2;Black_Cherry;90;21.6408;5.4864;0.0123;2;Black_Cherry;141;43.8912;7.3152;0.024;3;Bur_Oak;121;13.4112;7.9248;0.021;3;Paper_Birch;116;31.0896;5.4864;0.45;3;Paper_Birch;183;52.1208;6.4008;0.525;3;Paper_Birch;115;32.6136;6.096;0.675;3;Paper_Birch;125;35.6616;6.096;0.675;3;Paper_Birch;125;35.6616;6.096;0.675;3;Paper_Birch;115;32.6136;6.096;0.675;3;Paper_Birch;104;30.48;6.4008;0.9;3;Paper_Birch;104;30.7848;6.4008;0.9;3;Quaking_Aspen;172;41.148;5.7912;0.6;3;Quaking_Aspen;100;23.1648;5.7912;0.675;3;Quaking_Aspen;100;23.1648;5.7912;0.675;3;Quaking_Aspen;106;24.9936;5.7912;0.675;3;Quaking_Aspen;106;24.9936;5.7912;0.675;3;Red_Maple;139;12.8016;4.572;0.0336;2;Red_Maple;139;14.6304;4.8768;0.0496;3;Red_Maple;140;14.9352;4.8768;0.0496;3;Red_Maple;152;20.1168;5.1816;0.0656;3;Red_Maple;139;16.1544;5.1816;0.0656;3;Red_Maple;143;17.3736;5.1816;0.0656;3;Red_Maple;176;33.528;6.7056;0.128;3;Red_Maple;149;27.1272;6.7056;0.144;3;Red_Maple;151;27.7368;6.7056;0.144;3;Red_Maple;149;27.1272;6.7056;0.144;3;Red_Maple;149;27.1272;6.7056;0.144;3;Red_Maple;165;32.004;7.0104;0.144;3;Red_Maple;165;32.004;6.7056;0.144;3;Red_Maple;156;31.0896;7.0104;0.16;3;Red_Maple;155;30.48;7.0104;0.16;3;Red_Maple;161;32.6136;7.0104;0.16;3;Red_Maple;161;32.3088;7.0104;0.16;3;Red_Maple;177;37.4904;7.3152;0.16;3;Red_Maple;177;37.4904;7.3152;0.16;3;Red_Maple;206;47.8536;7.9248;0.176;3;Red_Maple;207;47.8536;7.9248;0.176;3;Red_Maple;207;47.8536;7.9248;0.176;3;Red_Maple;206;47.8536;7.9248;0.176;3;Red_Maple;149;32.004;7.62;0.192;3;Red_Maple;151;32.6136;7.62;0.192;3;Red_Maple;154;35.052;7.9248;0.208;3;Red_Maple;155;35.3568;7.9248;0.208;3;Red_Oak;82;13.1064;4.8768;0.0003;1;Red_Oak;133;25.908;11.5824;0.03;2;Red_Oak;124;23.1648;9.4488;0.03;2;Red_Oak;133;25.908;11.5824;0.03;2;Red_Oak;124;23.1648;9.7536;0.03;2;Red_Oak;140;27.432;12.4968;0.033;2;Red_Oak;134;25.908;11.2776;0.033;2;Red_Oak;139;27.432;12.4968;0.033;2;Red_Oak;134;25.908;11.2776;0.033;2;Red_Oak;132;24.9936;10.3632;0.036;2;Red_Oak;136;26.2128;11.2776;0.036;2;Red_Oak;132;24.9936;10.3632;0.036;2;Red_Oak;136;26.2128;11.2776;0.036;2;Red_Pine;247;55.1688;5.4864;0.027;2;Sugar_Maple;196;10.9728;4.2672;0.0016;1;Sugar_Maple;199;12.4968;4.572;0.0176;1;Sugar_Maple;199;12.4968;4.572;0.0176;1;Sugar_Maple;204;14.9352;4.8768;0.0336;1;Sugar_Maple;207;16.1544;4.8768;0.0336;1;Sugar_Maple;206;16.4592;5.1816;0.0496;1;Sugar_Maple;212;19.5072;5.4864;0.0656;1;Sugar_Maple;212;19.2024;5.4864;0.0656;1;Sugar_Maple;263;38.4048;7.0104;0.128;2;Sugar_Maple;296;42.672;7.3152;0.128;2;Sugar_Maple;257;37.1856;7.0104;0.144;2;Sugar_Maple;234;30.48;6.7056;0.144;2;Sugar_Maple;293;42.672;7.62;0.144;2;Sugar_Maple;233;30.1752;6.7056;0.144;2;Sugar_Maple;334;42.672;8.2296;0.16;2;Sugar_Maple;239;32.9184;7.0104;0.16;2;Sugar_Maple;330;42.672;8.2296;0.16;2;Sugar_Maple;237;32.3088;7.0104;0.16;2;Sugar_Maple;378;42.672;9.144;0.176;2;Sugar_Maple;358;42.672;8.8392;0.176;2;Sugar_Maple;485;42.672;10.668;0.192;2;Sugar_Maple;448;42.672;10.0584;0.192;2;White_Ash;99;7.3152;3.3528;0.0003;1;White_Ash;79;16.4592;4.8768;0.0123;1;White_Ash;68;42.0624;9.144;0.036;2;White_Ash;77;45.1104;9.4488;0.036;2;White_Cedar;276;13.4112;3.048;0.0033;1;White_Cedar;398;16.764;3.3528;0.0123;1;White_Cedar;602;16.764;3.6576;0.027;2;White_Cedar;595;16.764;3.6576;0.027;2;White_Cedar;665;16.764;3.9624;0.03;2;White_Cedar;672;16.764;3.9624;0.03;2;White_Cedar;770;16.764;4.2672;0.033;2;White_Cedar;780;16.764;4.2672;0.033;2;White_Cedar;638;16.764;3.6576;0.036;2;White_Cedar;646;16.764;3.6576;0.036;2;White_Oaks;115;13.716;5.4864;0.0123;2;White_Pine;145;8.2296;2.7432;0.0003;1;White_Pine;143;9.7536;3.048;0.0033;1;White_Pine;143;9.7536;3.048;0.0033;1;White_Pine;143;11.5824;3.3528;0.0063;1;White_Pine;142;11.5824;3.3528;0.0063;1;White_Pine;143;14.0208;3.9624;0.0093;2;White_Pine;143;13.716;3.6576;0.0093;2;White_Pine;145;16.4592;4.2672;0.0123;2;White_Pine;165;30.7848;5.7912;0.024;2;White_Pine;159;28.956;5.7912;0.024;2;White_Pine;133;20.7264;5.1816;0.024;2;White_Pine;133;20.7264;5.1816;0.024;2;White_Pine;159;28.6512;5.7912;0.024;2;White_Pine;141;25.2984;5.7912;0.027;2;White_Pine;164;32.3088;6.096;0.027;2;White_Pine;177;36.576;6.4008;0.027;2;White_Pine;136;23.7744;5.4864;0.027;2;White_Pine;163;32.3088;6.096;0.027;2;White_Pine;136;23.7744;5.4864;0.027;2;White_Pine;142;25.908;5.7912;0.027;2;White_Pine;174;37.4904;6.7056;0.03;2;White_Pine;136;32.3088;7.0104;0.039;2;White_Pine;137;32.6136;7.0104;0.039;2;White_Spruce;168;49.6824;4.8768;0.036;2;White_Spruce;169;49.9872;4.8768;0.036;2;White_Spruce;178;60.0456;5.4864;0.048;3;White_Spruce;180;60.6552;5.4864;0.048;3;"
+//_getMix="White_Cedar;113;8.5344;10;0;0;"
+//_getMix="Balsam_Fir;113;8.5344;3.048;0;1;"
+_getMix="Balsam_Fir;199;37.7952;3.9624;0.3;3;Balsam_Fir;199;37.7952;3.9624;0.3;3;Balsam_Fir;203;39.3192;4.2672;0.33;3;Balsam_Fir;203;39.3192;4.2672;0.33;3;Balsam_Fir;206;40.5384;4.2672;0.36;3;Balsam_Fir;206;40.5384;4.2672;0.36;3;Balsam_Fir;209;41.7576;4.2672;0.39;3;Balsam_Fir;209;41.7576;4.2672;0.39;3;Balsam_Fir;234;49.9872;4.572;0.42;3;Balsam_Fir;234;49.9872;4.572;0.42;3;Basswood;97;16.764;5.1816;0.093;1;Black_Ash;225;30.1752;4.8768;0.027;2;Black_Ash;225;30.1752;4.8768;0.027;2;Black_Ash;237;31.6992;5.1816;0.03;3;Black_Ash;238;31.6992;5.1816;0.03;3;Black_Cherry;62;6.7056;3.9624;0.0003;1;Black_Cherry;66;9.7536;4.2672;0.0033;1;Black_Cherry;63;8.8392;4.2672;0.0033;1;Black_Cherry;69;12.192;4.572;0.0063;1;Black_Cherry;76;15.8496;4.8768;0.0093;1;Black_Cherry;167;51.816;7.9248;0.024;2;Bur_Oak;108;11.5824;4.572;0.0033;1;Bur_Oak;108;11.5824;4.572;0.0033;1;Bur_Oak;121;13.4112;7.9248;0.021;1;Paper_Birch;116;31.0896;5.4864;0.45;2;Paper_Birch;188;53.9496;6.4008;0.525;2;Paper_Birch;127;36.2712;6.096;0.675;3;Paper_Birch;109;30.48;6.096;0.675;3;Paper_Birch;108;30.48;6.096;0.675;3;Paper_Birch;127;36.2712;6.096;0.675;3;Paper_Birch;108;32.004;6.4008;0.9;3;Paper_Birch;108;32.004;6.4008;0.9;3;Quaking_Aspen;174;41.4528;5.7912;0.6;3;Quaking_Aspen;106;24.9936;5.7912;0.675;3;Quaking_Aspen;99;22.86;5.7912;0.675;3;Quaking_Aspen;106;24.9936;5.7912;0.675;3;Quaking_Aspen;99;22.86;5.7912;0.675;3;Red_Maple;139;9.4488;3.9624;0.0016;1;Red_Maple;138;10.9728;4.2672;0.0176;1;Red_Maple;138;10.9728;4.2672;0.0176;1;Red_Maple;138;15.8496;4.8768;0.0656;2;Red_Maple;167;31.0896;6.7056;0.128;2;Red_Maple;144;25.6032;6.4008;0.144;2;Red_Maple;149;27.1272;6.7056;0.144;2;Red_Maple;148;26.8224;6.7056;0.144;2;Red_Maple;144;25.6032;6.4008;0.144;2;Red_Maple;158;29.8704;6.7056;0.144;2;Red_Maple;158;29.8704;6.7056;0.144;2;Red_Maple;154;30.48;7.0104;0.16;3;Red_Maple;170;35.052;7.3152;0.16;3;Red_Maple;156;30.7848;7.0104;0.16;3;Red_Maple;170;35.052;7.3152;0.16;3;Red_Maple;156;31.0896;7.0104;0.16;3;Red_Maple;155;30.48;7.0104;0.16;3;Red_Maple;202;46.3296;7.9248;0.176;3;Red_Maple;204;47.244;7.9248;0.176;3;Red_Maple;202;46.3296;7.9248;0.176;3;Red_Maple;205;47.5488;7.9248;0.176;3;Red_Maple;149;31.6992;7.62;0.192;3;Red_Maple;149;32.004;7.62;0.192;3;Red_Maple;154;35.052;7.9248;0.208;3;Red_Maple;154;35.052;7.9248;0.208;3;Red_Oak;90;14.6304;5.4864;0.0063;1;Red_Oak;129;24.6888;10.668;0.03;2;Red_Oak;127;24.0792;10.3632;0.03;2;Red_Oak;128;24.384;10.3632;0.03;2;Red_Oak;130;24.6888;10.9728;0.03;2;Red_Oak;138;27.1272;12.192;0.033;2;Red_Oak;138;27.1272;12.192;0.033;2;Red_Oak;142;28.3464;13.1064;0.033;2;Red_Oak;142;28.3464;13.1064;0.033;2;Red_Oak;141;27.7368;12.4968;0.036;2;Red_Oak;141;27.7368;12.4968;0.036;2;Red_Oak;136;26.2128;11.2776;0.036;2;Red_Oak;136;26.2128;11.2776;0.036;2;Red_Pine;244;53.9496;5.4864;0.027;2;Sugar_Maple;196;10.9728;4.2672;0.0016;1;Sugar_Maple;199;12.4968;4.572;0.0176;1;Sugar_Maple;199;12.8016;4.572;0.0176;1;Sugar_Maple;199;12.4968;4.572;0.0176;1;Sugar_Maple;202;14.3256;4.8768;0.0336;1;Sugar_Maple;205;16.1544;4.8768;0.0496;1;Sugar_Maple;211;18.288;5.1816;0.0496;1;Sugar_Maple;212;18.288;5.1816;0.0496;1;Sugar_Maple;211;19.2024;5.4864;0.0656;1;Sugar_Maple;210;18.5928;5.4864;0.0656;1;Sugar_Maple;258;36.576;7.0104;0.128;2;Sugar_Maple;291;46.9392;7.3152;0.128;2;Sugar_Maple;251;35.6616;7.0104;0.144;2;Sugar_Maple;288;46.9392;7.62;0.144;2;Sugar_Maple;237;31.0896;7.0104;0.144;2;Sugar_Maple;238;31.6992;7.0104;0.144;2;Sugar_Maple;335;42.672;8.2296;0.16;2;Sugar_Maple;331;60.6552;8.2296;0.16;2;Sugar_Maple;242;33.8328;7.3152;0.16;2;Sugar_Maple;244;34.4424;7.3152;0.16;2;Sugar_Maple;388;42.672;9.144;0.176;2;Sugar_Maple;365;42.672;8.8392;0.176;2;Sugar_Maple;493;42.672;10.668;0.192;2;Sugar_Maple;460;42.672;10.3632;0.192;2;White_Ash;73;43.8912;9.4488;0.036;2;White_Ash;65;41.148;9.144;0.036;2;White_Cedar;632;16.764;3.6576;0.027;2;White_Cedar;644;16.764;3.9624;0.027;2;White_Cedar;720;16.764;3.9624;0.03;2;White_Cedar;707;16.764;3.9624;0.03;2;White_Cedar;823;16.764;4.2672;0.033;2;White_Cedar;808;16.764;4.2672;0.033;2;White_Cedar;683;16.764;3.9624;0.036;2;White_Cedar;673;16.764;3.9624;0.036;2;White_Oaks;100;10.0584;4.2672;0.0003;1;White_Oaks;104;10.9728;4.572;0.0033;1;White_Pine;145;8.2296;2.7432;0.0003;1;White_Pine;143;11.8872;3.3528;0.0063;1;White_Pine;151;26.5176;5.4864;0.024;2;White_Pine;174;33.528;6.096;0.024;2;White_Pine;131;20.4216;5.1816;0.024;2;White_Pine;151;26.5176;5.4864;0.024;2;White_Pine;131;20.4216;5.1816;0.024;2;White_Pine;187;39.624;6.7056;0.027;2;White_Pine;133;22.86;5.4864;0.027;2;White_Pine;157;30.1752;6.096;0.027;2;White_Pine;146;26.8224;5.7912;0.027;2;White_Pine;147;27.432;5.7912;0.027;2;White_Pine;157;30.48;6.096;0.027;2;White_Pine;133;23.1648;5.4864;0.027;2;White_Pine;184;40.5384;7.0104;0.03;2;White_Pine;143;34.1376;7.0104;0.039;2;White_Pine;141;33.8328;7.0104;0.039;2;White_Spruce;161;47.8536;4.8768;0.036;2;White_Spruce;161;47.8536;4.8768;0.036;2;White_Spruce;176;59.1312;5.4864;0.048;3;White_Spruce;176;59.1312;5.4864;0.048;3;"
+@StartRule
+
+PlantMix -->
+	Ground_Cover.GroundCover
+	PlantMix(_getMix) 
+	 
+//this is a loop	
+PlantMix(mix) -->
+	case mix != "":
+	//listFirst returns first item in stringList.
+	//listItem Returns item at the given index
+        
+   		print  (listFirst(mix))
+   		print (float(listItem(mix,1)))
+   		print (float(listItem(mix,2)))
+   		print (float(listItem(mix,3)))
+   		print (float(listItem(mix,4)))
+   		print (float(listItem(mix,5)))
+	
+		DistributePlant(listFirst(mix),float(listItem(mix,1)),float(listItem(mix,2)),float(listItem(mix,3)),float(listItem(mix,4)),float(listItem(mix,5)))
+//this is the whole site		
+//		DistributePlant(listFirst(mix),float(listItem(mix,1)),float(listItem(mix,2)),float(listItem(mix,3)),float(listItem(mix,4)))
+//        cleanupGeometry(all, 0)
+//        reduceGeometry(0.8)
+		//string listRange(string stringList, float index1, float index2), This function returns all items in the stringList
+		// from index1 to index2 (the index2 item is not included in the resulting list).
+		PlantMix(listRange(mix,6,1000))		# recursive call until list is empty
+	else:
+		NIL
+
+//_trunkRadius(idx,radius)	= _trunkRadiusAvg(idx) * radius/_trunkRadiusAvg(idx)
+
+
+  DistributePlant(plant,number,height,radius,contagion,ageClass) -->
+    20%:scatter(surface, number, gaussian,center,(1-contagion)*500){ TREE(plant,height,radius, ageClass) }
+	20%:scatter(surface, number, gaussian,left,(1-contagion)*500){ TREE(plant,height,radius,ageClass) }
+	20%:scatter(surface, number, gaussian,right,(1-contagion)*500){ TREE(plant,height,radius,ageClass) }
+	20%:scatter(surface, number, gaussian,front,(1-contagion)*500){ TREE(plant,height,radius,ageClass) }
+	else:scatter(surface, number, gaussian,back,(1-contagion)*500){ TREE(plant,height,radius,ageClass) }
+
+		NIL
+
+TREE(plant,height,radius,ageClass) -->  
+	case plant == "Quaking_Aspen":
+			alignScopeToAxes(y) 
+			r(0,rand(0,360),0)
+			center(xz)  	
+			s(radius,height,radius)	 		 
+    		i("assets/Plants/" +"Paper_Birch/Paper_Birch"+"_Model_0.obj"  )
+    		Tree. 
+
+
+
+case plant == "Red_Oak":
+
+			alignScopeToAxes(y) 
+			r(0,rand(0,360),0)
+			center(xz)  	
+			s(radius,height,radius) 		 
+    		i("assets/Plants/" +"Northern_Red_Oak/Northern_Red_Oak"+"_Model_0.obj"  )
+    		Tree.    	
+
+case plant == "Bur_Oak":
+
+			alignScopeToAxes(y) 
+			r(0,rand(0,360),0)
+			center(xz)  	
+			s(radius,height,radius)		 		 
+    		i("assets/Plants/" +"White_Oak/White_Oak"+"_Model_0.obj"  )
+    		Tree.    	
+
+		
+case plant == "White_Spruce":
+
+			alignScopeToAxes(y) 
+			r(0,rand(0,360),0)
+			center(xz)  	
+			s(radius,height,radius)		 		 
+    		i("assets/Plants/" + "Norway_Spruce/Norway_Spruce"+"_Model_0.obj"  )
+    		Tree.
+
+case plant == "Black_Ash":
+
+			alignScopeToAxes(y) 
+			r(0,rand(0,360),0)  
+			center(xz)  	
+			s(radius,height,radius)		 
+    		i("assets/Plants/" + "White_Ash/White_Ash"+"_Model_0.obj"  )
+    		Tree.
+
+
+case plant == "White_Pine"|| plant=="Red_Pine":
+
+			alignScopeToAxes(y) 
+			r(0,rand(0,360),0)  
+			center(xz)  	
+			s(radius,height,radius) 		 
+    		i("assets/Plants/" + "Lodgepole_Pine/Lodgepole_Pine"+"_Model_0.obj" )
+    		Tree.
+
+case plant == "White_Oaks":
+
+			alignScopeToAxes(y) 
+			r(0,rand(0,360),0)  
+			center(xz)  	
+			s(radius,height,radius)		 
+    		i("assets/Plants/" + "White_Oak/White_Oak"+"_Model_0.obj" )
+    		Tree.
+
+case plant =="Red_Maple":
+		
+    	alignScopeToAxes(y)  
+    	s(radius,height,radius)
+   		r(0,rand(0,360),0)  
+    	i("assets/Plants/" + "Norway_Maple/Norway_Maple"+"_Model_0.obj" )
+    	center(xz)  
+    	Tree. 
+ 
+  	
+    		//check this model, I'm not sure if this is white cedar
+//I couldn't find Norther white cedar in the folder although it's supposed to, so I used california incense cedar    		
+case plant =="White_Cedar": 
+		
+		alignScopeToAxes(y)  
+    	s(radius,height,radius)
+   		r(0,rand(0,360),0)  
+    	i("assets/Plants/" + "California_Incense_Cedar/California_Incense_Cedar"+"_Model_0.obj" )
+    	center(xz)  
+    	Tree. 
+    	
+//I was supposed to use chinaberry tree and it supposed to be in the database, but it's not.
+
+case plant =="Black_Cherry":
+		
+		alignScopeToAxes(y)  
+    	s(radius,height,radius)
+   		r(0,rand(0,360),0)  
+    	i("assets/Plants/" +"Southern_Magnolia/Southern_Magnolia"+"_Model_0.obj" ) 
+    	center(xz)  
+    	Tree. 
+    	
+
+   else:
+    	alignScopeToAxes(y)  
+    	s(radius,height,radius)
+   		r(0,rand(0,360),0)  
+    	i("assets/Plants/" + plant +"/"+plant +"_Model_0.obj" )
+    	center(xz)  
+    	Tree. 
+ 
+ 
+
+
+	
+
+  
